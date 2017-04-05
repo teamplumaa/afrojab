@@ -1,0 +1,83 @@
+<template name="Register">
+  <nav class="navbar navbar-transparent navbar-absolute">
+	    <div class="container">
+	        <div class="navbar-header">
+	            <button type="button" class="navbar-toggle navbar-toggle-black" data-toggle="collapse" data-target="#navigation-example-2">
+	                <span class="sr-only">Toggle navigation</span>
+	                <span class="icon-bar "></span>
+	                <span class="icon-bar "></span>
+	                <span class="icon-bar"></span>
+	            </button>
+	        </div>
+	        <div class="collapse navbar-collapse">
+	            <ul class="nav navbar-nav navbar-right">
+	                <li>
+	                   <a href="/login" class="btn-default btn-success">
+	                        Already Konfamed? Log In
+	                    </a>
+	                </li>
+	            </ul>
+	        </div>
+	    </div>
+	</nav>
+
+	<div class="wrapper wrapper-full-page">
+    	<div class="register-page" data-color="green">
+		<!--   you can change the color of the filter page using: data-color="blue | azure | green | orange | red | purple" -->
+        	<div class="content">
+            	<div class="container">
+                	<div class="row">
+                      <div class="header-text">
+                          <h2>Today, Sunday March 12, is a good day to be Konfamed!</h2>
+                          <!-- <h4>See what we have to offer below.</h4> -->
+                          <hr>
+                      </div>
+                    	<div class="col-md-8">
+                        {{> FeedItem}}
+                    	</div>
+                    	<div class="col-md-4">
+                        	<form method="#" action="#">
+                            	<div class="card card-plain">
+                                	<div class="content" id="register-form" action="action">
+                                    	<div class="form-group">
+                                        	<input type="text" placeholder="Your First Name" id="first-name" class="form-control">
+                                    	</div>
+                                    	<div class="form-group">
+                                        	<input type="text" placeholder="Your Last Name" id="last-name" class="form-control">
+                                    	</div>
+                                      <div class="form-group">
+                                        	<input type="text" placeholder="Username" id="user-name" class="form-control">
+                                    	</div>
+                                    	<!-- <div class="form-group">
+                                        	<input type="email" placeholder="Company" id="user-name" class="form-control">
+                                    	</div> -->
+                                    	<div class="form-group">
+                                        	<input type="email" id="email" placeholder="Enter email" class="form-control">
+                                    	</div>
+                                    	<div class="form-group">
+                                        	<input type="password" placeholder="Password" id="password" class="form-control">
+                                    	</div>
+                                    	<div class="form-group">
+                                        	<input type="password" placeholder="Confirm Password" id="password-again" class="form-control">
+                                    	</div>
+                                	</div>
+                                	<div class="footer text-center">
+                                    	<button type="submit" id="register-button" class="btn btn-fill btn-success btn-wd">Create Account</button>
+                                	</div>
+                            	</div>
+                        	</form>
+                    	</div>
+                	</div>
+            	</div>
+        	</div>
+
+    		<footer class="footer footer-transparent">
+            	<div class="container">
+                <div class="copyright text-center">
+                    &copy; 2017 Konfam Corporation.
+                </div>
+            	</div>
+        	</footer>
+		</div>
+	</div>
+</template>

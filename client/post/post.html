@@ -1,0 +1,16 @@
+<template name="Post">
+  <div class="container-fluid row">
+    <div class="col-md-3 card-plain">
+      {{> PostMeta}}
+    </div>
+    <div class="col-md-6 card-plain">
+      {{> PostContent}}
+      <hr>
+      {{> ReplyPost}}
+
+    </div>
+    <div class="col-md-3">
+      {{> PostSidebar}}
+    </div>
+  </div>
+</template>

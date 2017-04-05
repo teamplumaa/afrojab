@@ -1,0 +1,82 @@
+<template name="NewPost">
+  <div class ="row">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="card-plain">
+          <div class="header">
+              <h6 class="title text-center">New Listing</h6>
+          </div>
+
+          <div class="content">
+              <form>
+                  <div class="row">
+                      <div class="col-md-8">
+                          <div class="form-group">
+                              <input type="text" class="form-control" placeholder="Title">
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                            <input type="text" placeholder="Your Location" class="form-control">
+                        </div>
+                      </div>
+                  </div>
+                  <div class="row">
+
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <select name="List Expiry Date" class="form-control selectpicker" data-title="Post Type" data-style="btn-default btn-block" data-menu-style="dropdown-blue">
+                            <option>Listing Type</option>
+                            <option>Free(Limit 1 per month)</option>
+                            <option>Sponsored(N100)</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                          <div class="form-group">
+                            <select name="Category" class="form-control selectpicker" data-title="Post Type" data-style="btn-default btn-block" data-menu-style="dropdown-blue">
+                              <option>Category</option>
+                              <option>Fashion</option>
+                              <option>Automobile</option>
+                              <option>Real Estate</option>
+                              <option>Event Planning</option>
+                              <option>Office Jobs</option>
+                            </select>
+                          </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <select name="List Expiry Date" class="form-control selectpicker" data-title="Post Type" data-style="btn-default btn-block" data-menu-style="dropdown-blue">
+                            <option>Listing Expiry Date</option>
+                            <option>1 month(free)</option>
+                            <option>2 months(N100)</option>
+                            <option>3 months(N200)</option>
+                          </select>
+                        </div>
+                      </div>
+                  </div>
+
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div class="form-group">
+                              <textarea rows="12" class="form-control" placeholder="Description">
+                              </textarea>
+                          </div>
+                      </div>
+                  </div>
+
+                  <button type="submit" class="btn btn-round pull-left">
+                    <i class="fa fa-camera"></i> Add Image
+                  </button>
+
+                  <button type="submit" class="btn btn-success btn-fill pull-right">Update Profile</button>
+                  <button type="submit" class="btn btn-danger btn-simple pull-right">Cancel</button>
+                  <div class="clearfix"></div>
+              </form>
+          </div>
+      </div>
+    </div>
+  </div>
+</template>

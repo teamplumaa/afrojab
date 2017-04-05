@@ -1,0 +1,43 @@
+<template name="Upload">
+  <div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
+    <div class="card-plain">
+        <div class="header">
+            <h6 class="title text-center">Upload</h6>
+        </div>
+
+        <div class="content">
+            <form>
+              <div class="row">
+
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <select name="List Expiry Date" class="form-control selectpicker" data-title="Upload Type" data-style="btn-default btn-block" data-menu-style="dropdown-blue">
+                        <option>Upload Type</option>
+                        <option>Document</option>
+                        <option>Image</option>
+                      </select>
+                    </div>
+                  </div>
+              </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <textarea rows="12" class="form-control" placeholder="Description">
+                            </textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-round pull-left">
+                  <i class="fa fa-camera"></i> Add Image
+                </button>
+
+                <button type="submit" class="btn btn-success btn-fill pull-right">Upload</button>
+                <button type="submit" class="btn btn-danger btn-simple pull-right">Cancel</button>
+                <div class="clearfix"></div>
+            </form>
+        </div>
+    </div>
+  </div>
+</template>

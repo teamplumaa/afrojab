@@ -1,0 +1,21 @@
+<template name="Payments">
+  <div class ="container-fluid row">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="card-plain">
+        {{> PaymentStats}}
+        <br>
+        {{> PayoutButton}}
+        <hr>
+        <div class="row">
+          <div class="col-md-6">
+            {{> PaymentReceivables}}
+          </div>
+          <div class="col-md-6">
+            {{> PaymentPayables}}
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</template>

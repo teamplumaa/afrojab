@@ -1,0 +1,91 @@
+<template name="SideNav">
+		<div class="sidebar sidebar-fixed" data-color="green" data-image="img/sidebar-main.jpg">
+
+	    <!--
+
+	        Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
+	        Tip 2: you can also add an image using data-image tag
+
+	    -->
+
+	    	<div class="sidebar-wrapper">
+	            <div class="user">
+	                <div class="photo">
+	                    <img src="konfam-logo-alt.png"/>
+	                </div>
+	            </div>
+
+								<form class="sidebar-form" role="search">
+		                <div class="input-group">
+		                    <span class="input-group-addon"><i class="fa fa-search"></i></span>
+		                    <input type="text" value="" class="form-control" placeholder="Search...">
+		                </div>
+		            </form>
+
+
+	            <ul class="nav">
+									<li class="{{isActiveRoute class='active' name='feed'}}">
+											<a href="/feed">
+													<i class="pe-7s-global"></i>
+													<p>Newsfeed</p>
+											</a>
+									</li>
+
+									<li class="{{isActiveRoute class='active' name='shop'}}">
+	                    <a href="/shop">
+	                        <i class="pe-7s-shopbag"></i>
+	                        <p>Go Shopping</p>
+	                    </a>
+	                </li>
+
+									<li class="{{isActiveRoute class='active' name='activities'}}">
+											<a href="/activities">
+													<i class="pe-7s-bell"></i>
+													<p>Notifications</p>
+											</a>
+									</li>
+
+									<!-- <li class="{{isActiveRoute class='active' name='store'}}">
+	                    <a href="/store">
+	                        <i class="pe-7s-cart"></i>
+	                        <p>My Store</p>
+	                    </a>
+	                </li> -->
+
+									<li class="{{isActiveRoute class='active' name='messages'}}">
+	                    <a href="/messages">
+	                        <i class="pe-7s-mail"></i>
+	                        <p>Inbox</p>
+	                    </a>
+	                </li>
+
+									<li class="{{isActiveRoute class='active' name='jobs'}}">
+	                    <a href="/jobs">
+	                        <i class="pe-7s-note2"></i>
+	                        <p>My Jobs</p>
+	                    </a>
+	                </li>
+
+									<li class="{{isActiveRoute class='active' name='my-listings'}}">
+	                    <a href="/my-listings">
+	                        <i class="pe-7s-portfolio"></i>
+	                        <p>My Listings</p>
+	                    </a>
+	                </li>
+
+	                <li class="{{isActiveRoute class='active' name='payments'}}">
+	                    <a href="/payments">
+	                        <i class="pe-7s-cash"></i>
+	                        <p>Payments</p>
+	                    </a>
+	                </li>
+
+
+
+
+
+
+	            </ul>
+	    	</div>
+	    </div>
+</template>

@@ -1,0 +1,29 @@
+<template name="IntroVideo">
+  <div class="card card-background">
+      <div class="video">
+          <video id="video-source" preload="auto" loop="loop" muted="muted" volume="0">
+              <!-- <source src="../assets/video/nyc_skyline.webm" type="video/webm">
+              <source src="../assets/video/nyc_skyline.ogv" type="video/ogg"> -->
+              <source src="images/this.mp4" type="video/mp4">
+              Video not supported
+          </video>
+          <div class="filter"></div>
+      </div>
+      <div class="content">
+           <p class="category">
+              Intro Video
+          </p>
+      </div>
+      <div class="footer">
+           <button type="button" data-video="video-source" data-toggle="video" class="btn btn-neutral btn-round">
+              <i class="fa fa-play"></i> Play
+          </button>
+           <div class="stats pull-right">
+                  <i class="fa fa-eye"></i> 68
+             </div>
+             <div class="stats pull-right">
+                  <i class="fa fa-heart"></i> 221
+             </div>
+      </div>
+  </div> <!-- end card -->
+</template>

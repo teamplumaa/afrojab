@@ -1,0 +1,74 @@
+.media {
+  border-bottom: 1px solid #DDDDDD;
+  padding-bottom: 30px;
+  margin: 50px;
+}
+.media .avatar {
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 15px;
+  border: 3px solid transparent;
+}
+.media .avatar img {
+  width: 100%;
+}
+.media .media-heading {
+  margin-bottom: 10px;
+  margin-top: 5px;
+  display: inline-block;
+}
+.media .btn-simple {
+  padding: 0px 5px;
+}
+.media .media {
+  margin-top: 30px;
+}
+.media .media:last-child {
+  border: 0;
+}
+
+.media-post {
+  color: #555;
+  border: 0;
+}
+.media-post .media-heading {
+  display: block;
+  text-align: center;
+}
+.media-post .author {
+  width: 15%;
+}
+.media-post .media-body {
+  width: 85%;
+  float: left;
+  display: inline-block;
+}
+.media-post textarea {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+}
+.media-post .avatar {
+  border-color: white;
+}
+
+.media-area .media:last-child {
+  border: 0;
+}
+.media-area .pagination-area {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.media-area-small p {
+  font-size: 12px;
+}
+.media-area-small .btn-simple {
+  font-size: 12px;
+}
+.media-area-small .avatar {
+  width: 48px;
+  height: 48px;
+}

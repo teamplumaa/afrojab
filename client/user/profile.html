@@ -1,0 +1,58 @@
+<template name="Profile">
+  <div class="col-md-4">
+    {{> UserInfo}}
+  </div>
+
+  <div class="col-md-8">
+      <div class="card-plain">
+          <div class="content">
+            <h6 align="center">About Me</h6><br>
+            <p class="category">
+               Fashion-designer located in Ibadan with experience designing Yoruba, Igbo, and Hausa clothes. I also have a lot of experience making school uniforms.
+            </p>
+          </div>
+      </div>
+      <hr>
+
+      <div class="card-plain">
+        <h6 align="center">Intro Video</h6><br>
+        {{> IntroVideo}}
+      </div>
+      <hr>
+
+      <div class="card-plain">
+        <div class="row">
+          <div class="col-md-8"><h6> My Gallery</h6></div>
+          <div class="col-md-4" align="right">
+              <a href="/upload"><h6><i class="fa fa-camera"></i></h6></a>
+          </div>
+        </div>
+
+        {{> Gallery}}
+      </div>
+      <hr>
+
+      <div class="card-plain">
+        <div class="row">
+          <div class="col-md-8"><h6> My Documents</h6></div>
+          <div class="col-md-4" align="right">
+              <a href="/upload"><h6><i class="fa fa-plus"></i></h6></a>
+          </div>
+        </div>
+        <br>
+        {{> Documents}}
+      </div>
+      <hr>
+
+      <div class="card-plain card-product">
+          <div class="content">
+            <h6 align="center">Reviews</h6><br>
+            {{> Reviews}}
+          </div>
+      </div>
+
+
+
+
+  </div>
+</template>
